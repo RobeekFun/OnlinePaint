@@ -1,0 +1,182 @@
+body {
+	background-color: #262525;
+}
+
+.blogStart > h1 {
+	position: absolute;
+	top: 20%;
+	left: 44%;
+	font-size: 100px;
+	color: white;
+	animation: fadeInUp;
+	animation-duration: 2s; 
+}
+
+.content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.posts {
+	width: 70%;
+}
+
+.post {
+	margin-top: 20px;
+	width: 100%;
+	max-height: 700px;
+	text-align: left;
+	margin-bottom: 70px;
+}
+
+.post > .post_title {
+	color: white;
+	text-decoration: none;
+	font-size: 50px;
+}
+
+.post > .post_title:hover {
+	text-decoration: underline;
+}
+
+.post > .text {
+	color: white;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post > .pub_date{
+	color: white;
+	font-weight: italic;
+	margin-bottom: 20px;
+}
+
+.post > .read  {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid white;
+	transition: .2s;
+	font-size: 25px;
+}
+
+.post > .read:hover {
+	background: white;
+	color: #1a1a1a;
+	transition: .2s;
+}
+
+.post-info {
+	width: 70%;
+	padding-top: 100px;
+	text-align: left;
+}
+
+.post-info > .title {
+	color: white;
+	font-size: 70px;
+}
+
+
+.post-info > .text {
+	color: white;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.post-info > .pub_date{
+	color: white;
+	font-weight: italic;
+	margin-bottom: 20px;
+}
+
+/*for posts*/
+
+.addition {
+	width: 90%;
+	color: white;
+	background: #1a1a1a;
+	padding: 20px;
+}
+
+.heading {
+	color: orange;
+	font-size: 30px;
+}
+
+.standart--img {
+	max-width: 90%;
+	max-height: 50%;
+}
+
+.standart--href {
+	color: orange;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.standart--href:hover {
+	font-weight: bold;
+}
+
+.danger--href {
+	color: red;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.danger--href:hover {
+	font-weight: bold;
+}
+
+.success--href {
+	color: #8ac832;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.success--href:hover {
+	font-weight: bold;
+}
+
+.pagination{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	margin-top: 30px;
+}
+
+.pagination > li {
+	list-style: none;
+	margin-left:5px;
+}
+
+.pagination > li > a {
+	color: white;
+	padding: 20px;
+	background-color: none;
+    border: 2px solid white;
+	text-decoration: none;
+	transition: .2s;
+}
+
+.pagination > li > a:hover {
+	background-color: white;
+	color: #1a1a1a;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.pagination > li > .active {
+	background-color: white;
+	color: #1a1a1a;
+}
+
+.disabled {
+	display: none;
+}
+
+

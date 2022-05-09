@@ -1,0 +1,202 @@
+body {
+	background-color: #262525;
+}
+
+#canvas:hover {
+	cursor: url(https://ani.cursors-4u.net/others/oth-9/oth852.cur), auto !important;
+	/*cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1046.cur), auto !important;*/
+}
+
+.paintStart > h1 {
+	position: absolute;
+	top: 20%;
+	left: 28%;
+	font-size: 70px;
+	color: white;
+	animation: fadeInUp;
+	animation-duration: 2s; 
+}
+
+.content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.paintMenu {
+	display: flex;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+}
+
+.paintMenu > li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+.paintMenu > li > a {
+	padding: 20px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	transition: .2s;
+}
+
+.paintMenu > li > a:hover {
+	background: white;
+	color: #1a1a1a;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.instruments {
+	display: none;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.instruments > li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+.instruments > li > a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid white;
+	transition: .2s;
+}
+
+.instruments > li > a:hover {
+	background: white;
+	color: #1a1a1a;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.colors {
+	display: none;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.colors > li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+.colors > li > a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid white;
+	transition: .2s;
+}
+
+.colors > li > a:hover {
+	background: white;
+	color: #1a1a1a;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.settings {
+	display: none;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+	margin-top: 20px;
+	color: white;
+}
+
+.settings > li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+.settings > li > a {
+	color: white;
+	text-decoration: none;
+	padding: 13px;
+	text-decoration: none;
+	border: 1px solid white;
+	transition: .2s;
+}
+
+.settings > li > a:hover {
+	background: white;
+	color: #1a1a1a;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.settings-input {
+	background: none;
+	color: white;
+	border: 1px solid white;
+	font-size: 20px;
+	padding: 10px;
+	width: 50px;
+}
+
+.info {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.info > p {
+	margin-left: 20px;
+}
+
+.quickMenu {
+	display: flex;
+	width: 70%;
+	justify-content: right;
+	margin-bottom: 20px;
+}
+
+.quickMenu > li {
+	list-style: none;
+	margin-left: 10px;
+}
+
+.quickMenu > li > a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid white;
+	font-size: 20px;
+	transition: .2s;
+}
+
+.quickMenu > li > a:hover {
+	background: white;
+	color: #1a1a1a;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.info > a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid white;
+	font-size: 20px;
+	transition: .2s;
+}
+
+.info > a:hover {
+	background: white;
+	color: #1a1a1a;
+	transition: .2s;
+	cursor: pointer;
+}

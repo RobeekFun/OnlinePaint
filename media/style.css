@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+.header {
+	position: fixed;
+	background-color: rgba(24,24,24,.9);
+	height: 80px;
+	width: 100%;
+}
+.menu {
+	width: 100%;
+	display: flex;
+}
+
+.menu > li {
+	list-style: none;
+	margin-top: 20px;
+}
+
+.menu > li > a{
+	padding: 30px;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu > li > a:hover {
+	border-bottom: 1px solid white;
+}
+
+.main > h1 {
+	position: absolute;
+	top: 40%;
+	left: 33%;
+	font-size: 100px;
+	color: white;
+	animation: fadeInUp;
+	animation-duration: 5s; 
+}
+
+.main > p {
+	position: absolute;
+	top: 50%;
+	left: 26%;
+	font-size: 60px;
+	color: white;
+	letter-spacing: 20px;
+	animation: fadeInUp;
+	animation-duration: 5s; 
+}
+
+.information {
+	background-color: #262525;
+	margin-top: -4px;
+	display: flex;
+	height: 500px;
+	padding: 40px;
+}
+
+.information > .image {
+	width: 60%;
+}
+
+.information > .image > img {
+	width: 100%;
+	height: 100%;
+}
+
+.information > .text {
+	width: 40%;
+	color: white;
+}
+
+.information > .text > h1{
+	font-size: 60px;
+}
+
+.information > .text > p{
+	margin-top: 30px;
+	font-size: 25px;
+}
+
+.separator{
+	margin-top: -4px;
+	border-top: 30px solid #1a1a1a;
+	border-bottom: 30px solid #1a1a1a;
+	background-color: #1a1a1a;
+	color: white;
+	text-align: center;
+}
+
+.lets-start {
+	background-color: #262525;
+	height: 600px;
+}
+
+.lets-start > center {
+	padding-bottom: 40px;
+}
+
+.lets-start > center > p {
+	font-size: 30px;
+	width: 70%;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.startBtn {
+	zoom: 200%;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 50px;
+	margin: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 40px 40px #1a1a1a inset, 0 0 0 0 #1a1a1a;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	Letter-spacing: 2px;
+	color: white;
+	transition: .15s ease-in-out;
+}
+.startBtn:hover {
+	box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px white;
+	color: white;
+}
+
+.footer {
+	height: 200px;
+	background: #1a1a1a;
+}
+
+.footer > p {
+	text-align: center;
+	padding-top: 80px;
+	font-size: 40px;
+	color: white;
+}

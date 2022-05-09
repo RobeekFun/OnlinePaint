@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Головна сторінка{% endblock %}
+
+{% block content %}
+		<div class="main">
+		<canvas id="mainCanvas" style="width:100%;height:100%;"></canvas>
+		<h1>Online Paint</h1>
+		<p>Намалюй свої думки</p>
+	</div>
+	<h1 class="separator" id="information">F<span style="border-bottom:3px solid white;">A</span>Q</h1>
+	<div class="information">
+		<div class="image">
+			<img src="../../media/images/faq.png">
+		</div>
+		<div class="text">
+			<h1>Що це таке?</h1>
+			<p>Даний сайт був зроблений студентом школи <b>"JuniorIT"</b>. На даному сайті вам надається доступ до холста, на якому ви можете намалювати свій шедевр, тримаючи в руках лише комп'ютерну мишу. Ви також можете насолоджуватися анімаціями та дуже красивим дизайном сайту. Сайт написаний на язиках HTML, CSS та JS.</p>
+		</div>
+	</div>
+	<div class="information">
+		<div class="text" style="width:70%;">
+			<h1>Чому саме ця тема?</h1>
+			<p style="width:80%;">Мені дуже подобаються проекти, які дозволяють робити щось унікальне. Наприклад конструктори ігор, фото редактори, відео редактори, конструктори сайтів та стандартні програми для малювання. Все це мені дуже подобається і я вже дуже давно мрію про те, щоб створити щось подібне. Але я вибрав саме Paint оскільке це єдине, на що я зараз здатен, тому і вирішив зробити саме такий проект.</p>
+		</div>
+		<div class="image" style="width:30%;">
+			<img src="../../media/images/whythis.png">
+		</div>
+	</div>
+	<div class="information">
+		<div class="image" style="width:50%;">
+			<img src="../../media/images/thankyou.png">
+		</div>
+		<div class="text" style="width: 50%;">
+			<h1>Кому я вдячний?</h1>
+			<p>Я дуже вдячний моєму вчителю - Віті Голубінській. Дякую їй, що навчила мене не боятися вивчати нове, дякую що вірила в мене і допомагала, коли було тяжко. Завдяки Віті я, хоч трохи, та вивчив і зрозумів JS, мову якою я вже давно хотів володіти. Віта, дякую вам, я дуже радий, що ви були моїм вчителем.</p>
+		</div>
+	</div>
+	<h1 class="separator">Може вже<span style="border-bottom:3px solid white;"> хочете </span>спробувати?</h1>
+	<div class="lets-start" id="start">
+		<center>
+			<p>Я думаю ви прийшли сюди, щоб подивитися на мій проект, чи просто помалювати, тому не буду вас затримувати, <b>клікайте на кнопку</b>!</p>
+			<a href="{% url 'posts:paint' %}" class="startBtn">Почати</a>
+		</center>
+	</div>
+
+	<script type="text/javascript" src="../media/main.js"></script>
+{% endblock %}

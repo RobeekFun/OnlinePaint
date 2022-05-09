@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{post.title}}{% endblock %}
+
+{% block content %}
+
+	<center>
+		<div class="post-info">
+			<h1 class="title">{{post.title}}</h1>
+			<p class="text">{{post.text|safe|linebreaksbr}}</p>
+			<p class="pub_date">{{post.pub_date}}</p>
+		</div>
+	</center>
+	<script type="text/javascript" src="../../media/blog.js"></script>
+{% endblock %}

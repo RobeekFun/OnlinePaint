@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Блог{% endblock %}
+
+{% block content %}
+	<div class="blogStart">
+		<canvas id="blogCanvas" style="width:100%;"></canvas>
+		<h1>Блог</h1>
+	</div>
+	{% if posts %}
+	<center>
+		<div class="posts">
+			{% for p in posts %}
+				<div class="post">
+					<a href="{% url 'posts:post_detail' p.id %}" class="post_title">{{p.title}}</a>
+					<p class="text">{{p.text|truncatewords_html:30|safe|linebreaksbr}}</p>
+					<p class="pub_date">{{p.pub_date}}</p>
+					<a href="{% url 'posts:post_detail' p.id %}" class="read">Читати далі</a>
+				</div>
+			{% endfor %}
+		</div>
+	</center>
+	{% else %}
+		<p>Посты не найдены</p>
+	{% endif %}
+
+	{% if posts.has_other_pages %}
+	  <ul class="pagination">
+	    {% if posts.has_previous %}
+	      <li><a href="?page={{ posts.previous_page_number }}">&laquo;</a></li>
+	    {% else %}
+	      <li class="disabled"><span>&laquo;</span></li>
+	    {% endif %}
+	    {% for i in posts.paginator.page_range %}
+	      {% if posts.number == i %}
+	        <li><a class="active"><span>{{ i }}</span></a></li>
+	      {% else %}
+	        <li><a href="?page={{ i }}">{{ i }}</a></li>
+	      {% endif %}
+	    {% endfor %}
+	    {% if posts.has_next %}
+	      <li><a href="?page={{ posts.next_page_number }}">&raquo;</a></li>
+	    {% else %}
+	      <li class="disabled"><span>&raquo;</span></li>
+	    {% endif %}
+	  </ul>
+	{% endif %}
+
+	<script type="text/javascript" src="../../media/blog.js"></script>
+{% endblock %}

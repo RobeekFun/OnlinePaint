@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Холст{% endblock %}
+
+{% block content %}
+	<div class="paintStart">
+		<canvas id="startCanvas" style="width:100%;"></canvas>
+		<h1>Намалюй свій шедевр</h1>
+	</div>
+	<div class="content">
+		<ul class="paintMenu">
+			<li><a id="instruments">Інструменти</a>
+			</li>
+			<li><a id="colors">Кольори</a>
+			</li>
+			<li><a id="settings">Налаштування</a></li>
+		</ul>
+		<ul class="instruments submenu">
+			<li><a id="brush" style="font-weight: bold;">Пензлик</a></li>
+			<li><a id="railways">RailWays пензлик</a></li>
+			<li><a id="rectangle">Прямокутник</a></li>
+			<li><a id="frame">Рамка</a></li>
+			<li><a id="delete">Гумка</a></li>
+			<li><a id="deleteAll">Очистити холст</a></li>
+		</ul>
+		<ul class="colors submenu">
+			<li><input type="color" name="" id="colorPicker" style="width: 150px; height: 43px; margin-top: -14px;" value="#000000"></li>
+		</ul>
+		<ul class="settings submenu">
+			<li><label style="display:block; text-align:center; font-size:10px;">Розмір пензля </label><input class="settings-input" id="brushSize" type="number" name="" placeholder="Розмір пензля" value="3" min="1"></li>
+			<li><label style="display:block; text-align:center; font-size:10px;">Розмір гумки </label><input class="settings-input" id="deleteSize" type="number" name="" placeholder="Розмір гумки" value="3" min="1"></li>
+			<li><label style="display:block; text-align:center; font-size:10px;">Товщина рамки</label><input class="settings-input" id="frameSize" type="number" name="" placeholder="Товщина рамки" value="3" min="1"></li>
+		</ul>
+		<center style="margin-top:30px;">
+			<ul class="quickMenu">
+				<li><a class="back">↶</a></li>
+				<li><a class="forward">↷</a></li>
+			</ul>
+			<canvas id="canvas"></canvas>
+			<div class="info">
+				<a class="share">Поділитись</a>
+				<a class="save" style="margin-left:10px;">Зберігти</a>
+			</div>
+		</center>
+	</div>
+
+	<script type="text/javascript" src="../media/paint.js"></script>
+	<script type="text/javascript" src="../media/mainPaint.js"></script>
+{% endblock %}
